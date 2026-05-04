@@ -1,0 +1,78 @@
+/* src/routes/styles.css — FILE COMPLETO FINALE */
+@import "tailwindcss";
+
+:root {
+  --background: #080b12;
+  --foreground: #e2e8f0;
+  --surface: #131720;
+  --surface-elevated: #1a1f2e;
+  --vault-border: #1e2433;
+  --violet: #7c6bc9;
+  --purple: #9b7fd4;
+  --teal: #2dd4bf;
+  --emerald: #34d399;
+  --amber: #c9a87c;
+  --green: #4ade80;
+  --red: #e0556a;
+  --sky: #38bdf8;
+  --yellow: #fbbf24;
+  --radius: 1.25rem;
+  --laser-cyan: #9b7fd4;
+  --laser-magenta: #b49fdc;
+}
+
+body {
+  background: #080b12 !important;
+  color: #ffffff;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ========== GLASS WIDGET ========== */
+.glass-widget {
+  background: rgba(19, 23, 32, 0.75) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(180, 159, 220, 0.15) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+}
+
+/* ========== ANALYTICS CARDS ========== */
+.glass-card-analytics {
+  background: rgba(19, 23, 32, 0.75) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(180, 159, 220, 0.15) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.04) !important;
+  padding: 1.5rem !important;
+}
+
+/* ========== TESTI ========== */
+h1, h2, h3, h4, h5, h6, p { color: #ffffff !important; }
+.text-muted-foreground { color: #cbd5e1 !important; }
+
+/* ========== COLORI ========== */
+.text-laser-cyan, .text-blue-400 { color: #38bdf8 !important; }
+.text-laser-magenta, .text-purple-400 { color: #a78bfa !important; }
+.text-laser-green, .text-green-400 { color: #4ade80 !important; }
+.text-laser-red, .text-red-400 { color: #ef4444 !important; }
+.text-yellow-400 { color: #fbbf24 !important; }
+.text-sky-400 { color: #38bdf8 !important; }
+.text-violet-400 { color: #a78bfa !important; }
+
+.bg-laser-cyan { background-color: #7c6bc9 !important; }
+.bg-laser-cyan\/90 { background-color: rgba(124, 107, 201, 0.9) !important; }
+.hover\:bg-laser-cyan\/90:hover { background-color: rgba(124, 107, 201, 0.9) !important; }
+.text-background { color: #ffffff !important; }
+
+/* ========== ASSI GRAFICI ========== */
+.recharts-cartesian-axis-tick text,
+.recharts-text { fill: #ffffff !important; }
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line { stroke: rgba(255, 255, 255, 0.2) !important; }
+
+/* ========== SFONDI ========== */
+.bg-surface { background-color: var(--surface); }
+.bg-surface-elevated { background-color: var(--surface-elevated); }
+.border-vault-border { border-color: var(--vault-border); }

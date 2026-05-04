@@ -1,0 +1,6 @@
+<script>
+const keys = Object.keys(localStorage);
+keys.forEach(k => { if (k.includes('timeline')) localStorage.removeItem(k); });
+alert('Timeline cleared! Reload the page.');
+location.reload();
+</script>
